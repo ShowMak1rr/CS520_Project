@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use('/posts', postRoutes);                              //routing specified for /posts
 
-const MONGODB_CONNECTION_URL = 'mongodb+srv://cs520:cs520project@cluster0.hbu3p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';      //connection to mongoDB cluster
+const MONGODB_CONNECTION_URL = 'mongodb+srv://wdong:dwk18615232860@cluster0.z2dx6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';      //connection to mongoDB cluster
 const PORT = process.env.PORT || 4000;
 mongoose.connect(MONGODB_CONNECTION_URL, {})
     .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))         //define the port for this server (specifically routing posts)
